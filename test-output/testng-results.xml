@@ -2,15 +2,30 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-12T18:07:50 IST" name="Suite" finished-at="2021-02-12T18:08:10 IST" duration-ms="19851">
+  <suite started-at="2021-02-13T18:04:15 IST" name="Suite" finished-at="2021-02-13T18:04:35 IST" duration-ms="19826">
     <groups>
     </groups>
-    <test started-at="2021-02-12T18:07:50 IST" name="Testing" finished-at="2021-02-12T18:08:10 IST" duration-ms="19851">
+    <test started-at="2021-02-13T18:04:15 IST" name="Testing" finished-at="2021-02-13T18:04:35 IST" duration-ms="19826">
       <class name="Testing.TestAuto">
-        <test-method signature="f()[pri:0, instance:Testing.TestAuto@2928854b]" started-at="2021-02-12T18:07:50 IST" name="f" finished-at="2021-02-12T18:08:10 IST" duration-ms="19804" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testing.TestAuto@56de5251]" started-at="2021-02-13T18:04:15 IST" name="setup" finished-at="2021-02-13T18:04:15 IST" duration-ms="124" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
+        </test-method> <!-- setup -->
+        <test-method signature="ExecuteTests(java.lang.reflect.Method)[pri:0, instance:Testing.TestAuto@56de5251]" started-at="2021-02-13T18:04:15 IST" name="ExecuteTests" finished-at="2021-02-13T18:04:35 IST" duration-ms="19799" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Testing.TestAuto.ExecuteTests(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExecuteTests -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Testing.TestAuto@56de5251]" started-at="2021-02-13T18:04:35 IST" name="teardown" finished-at="2021-02-13T18:04:35 IST" duration-ms="252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
       </class> <!-- Testing.TestAuto -->
     </test> <!-- Testing -->
   </suite> <!-- Suite -->

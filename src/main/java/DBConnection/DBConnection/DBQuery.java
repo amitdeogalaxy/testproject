@@ -16,7 +16,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 
 
-
 public class DBQuery {
 
 	static File file_query = new File(
@@ -28,11 +27,13 @@ public class DBQuery {
 	static Properties prop;
 	static Properties prop_dbproperties;
 	public static WebDriver driver;
+	
 
 	public void callingDBTest() throws InterruptedException {
 		try {
 			fs_query = new FileInputStream(file_query);
 			fs_dbprop = new FileInputStream(file_db);
+			
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {

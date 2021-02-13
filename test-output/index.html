@@ -104,7 +104,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Testing.TestAuto" class="method navigator-link" hash-for-method="f">f</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Testing.TestAuto" class="method navigator-link" hash-for-method="ExecuteTests(public void Testing.TestAuto.ExecuteTests(java.lang.reflect.Method))">ExecuteTests(public void Testing.TestAuto.ExecuteTests(java.lang.reflect.Method))</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -127,9 +127,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="f">
-                  </a> <!-- f -->
-                  <span class="method-name">f</span>
+                  <a name="ExecuteTests(public void Testing.TestAuto.ExecuteTests(java.lang.reflect.Method))">
+                  </a> <!-- ExecuteTests(public void Testing.TestAuto.ExecuteTests(java.lang.reflect.Method)) -->
+                  <span class="method-name">ExecuteTests</span>
+                  <span class="parameters">(public void Testing.TestAuto.ExecuteTests(java.lang.reflect.Method))</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -188,9 +189,9 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'f')
+data.setCell(0, 1, 'ExecuteTests')
 data.setCell(0, 2, 'Testing.TestAuto')
-data.setCell(0, 3, 19804);
+data.setCell(0, 3, 19799);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -222,10 +223,18 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">Testing.TestAuto</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">f</span>
+              <div class="configuration-suite before">
+                <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <span class="method-name">ExecuteTests(public void Testing.TestAuto.ExecuteTests(java.lang.reflect.Method))</span>
+                <span class="method-start">144 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">19974 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
