@@ -81,21 +81,21 @@ public class TestAuto {
 
 		if (browser_value.equalsIgnoreCase("Chrome")) {
 			System.setProperty("webdriver.chrome.driver",
-					"C:\\Users\\adeo\\Desktop\\WireXchange\\WireXChangeTest\\chromedriver.exe");
+					"C:\\Users\\adeo\\Desktop\\Project\\DBConnection\\src\\main\\resources\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 
 		else if (browser_value.equalsIgnoreCase("Firefox")) {
 			System.setProperty("webdriver.gecko.driver",
-					"C:\\Users\\adeo\\Desktop\\WireXchange\\WireXChangeTest\\geckodriver.exe");
+					"C:\\Users\\adeo\\Desktop\\Project\\DBConnection\\src\\main\\resources\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		} else if (browser_value.equalsIgnoreCase("IE")) {
 			System.setProperty("webdriver.ie.driver",
-					"C:\\Users\\adeo\\Desktop\\WireXchange\\WireXChangeTest\\IEDriverServer.exe");
+					"C:\\Users\\adeo\\Desktop\\Project\\DBConnection\\src\\main\\resources\\IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
 		} else if (browser_value.equalsIgnoreCase("Edge")) {
 			System.setProperty("webdriver.edge.driver",
-					"C:\\Users\\adeo\\Desktop\\WireXchange\\WireXChangeTest\\msedgedriver.exe");
+					"C:\\Users\\adeo\\Desktop\\Project\\DBConnection\\src\\main\\resources\\msedgedriver.exe");
 			driver = new EdgeDriver();
 		} else {
 			System.out.println("No browser value provided");
