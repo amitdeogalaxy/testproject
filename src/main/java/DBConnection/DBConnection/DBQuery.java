@@ -13,8 +13,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
-
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 
 public class DBQuery {
 
@@ -26,14 +27,13 @@ public class DBQuery {
 	static FileInputStream fs_dbprop;
 	static Properties prop;
 	static Properties prop_dbproperties;
-	public static WebDriver driver;
-	
+	 public static WebDriver Driver;
 
 	public void callingDBTest() throws InterruptedException {
 		try {
 			fs_query = new FileInputStream(file_query);
 			fs_dbprop = new FileInputStream(file_db);
-			
+
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -49,32 +49,36 @@ public class DBQuery {
 			e.printStackTrace();
 		}
 		TestDB db = new TestDB();
-		String sqlquery_outputlt = db.executequery(prop_dbproperties.getProperty("dburl"), prop.getProperty("mxn_WX-T1134_Step06"),"Select", "Null");
-		System.out.println(sqlquery_outputlt);		
-		sqlquery_outputlt = db.executequery(prop_dbproperties.getProperty("dburl"), prop.getProperty("mxn_WX-T1137_Step07"),"Update", "Null", "Ashutosh", "2571");
+		String sqlquery_outputlt = db.executequery(prop_dbproperties.getProperty("dburl"),
+				prop.getProperty("mxn_WX-T1134_Step06"), "Select", "Null");
 		System.out.println(sqlquery_outputlt);
-		
+		sqlquery_outputlt = db.executequery(prop_dbproperties.getProperty("dburl"),
+				prop.getProperty("mxn_WX-T1137_Step07"), "Update", "Null", "Ashutosh", "2571");
+		System.out.println(sqlquery_outputlt);
+
 	}
-	public void GoogleTest() throws InterruptedException{
-		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\adeo\\Desktop\\WireXchange\\WireXChangeTest\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		driver.get("https://www.google.com/");
+
+	public void GoogleTest(WebDriver Driver) throws InterruptedException {
+		
+		
+
+		
+		  Driver.manage().window().maximize(); Driver.manage().deleteAllCookies();
+		  Driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+		  Driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		  Driver.get("https://www.google.com/");
+		 
 		Thread.sleep(5000);
-		driver.findElement(By.xpath("//a[text()='Sign in']")).click();
+		Driver.findElement(By.xpath("//a[text()='Sign in']")).click();
 		Thread.sleep(5000);
-		WebElement sign_in = driver.findElement(By.xpath("//input[@type='email']"));
-		if(sign_in.isDisplayed()) {			
-		System.out.println("Sign In page is displayed for Google");
-		driver.quit();
-		}else {
+		WebElement sign_in = Driver.findElement(By.xpath("//input[@type='email']"));
+		if (sign_in.isDisplayed()) {
+			System.out.println("Sign In page is displayed for Google");			
+		} else {
 			System.out.println("Sign In page is not displayed for google");
-			
+
 		}
-		
+
 	}
+
 }

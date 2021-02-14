@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Testing</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/10/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Feb 13 18:04:15 IST 2021</td>
+<td>Started on:</td><td>Sun Feb 14 18:15:17 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>19 seconds (19826 ms)</td>
+<tr><td>Total time:</td><td>1 seconds (1137 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,9 +76,540 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='Testing.TestAuto.ExecuteTests()'><b>ExecuteTests</b><br>Test class: Testing.TestAuto<br>Parameters: public void Testing.TestAuto.ExecuteTests(java.lang.reflect.Method)</td>
-<td></td>
-<td>19</td>
-<td>Testing.TestAuto@56de5251</td></tr>
+<td><div><pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at DBConnection.DBConnection.DBQuery.GoogleTest(DBQuery.java:67)
+	at Testing.TestAuto.ExecuteTests(TestAuto.java:75)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1494346128", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1494346128'><pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at DBConnection.DBConnection.DBQuery.GoogleTest(DBQuery.java:67)
+	at Testing.TestAuto.ExecuteTests(TestAuto.java:75)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Testing.TestAuto@7c469c48</td></tr>
+<tr>
+<td title='Testing.TestAuto.ExecuteTestseigth()'><b>ExecuteTestseigth</b><br>Test class: Testing.TestAuto<br>Parameters: public void Testing.TestAuto.ExecuteTestseigth(java.lang.reflect.Method)</td>
+<td><div><pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at DBConnection.DBConnection.DBQuery.GoogleTest(DBQuery.java:67)
+	at Testing.TestAuto.ExecuteTestseigth(TestAuto.java:187)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace756936249", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace756936249'><pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at DBConnection.DBConnection.DBQuery.GoogleTest(DBQuery.java:67)
+	at Testing.TestAuto.ExecuteTestseigth(TestAuto.java:187)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Testing.TestAuto@7c469c48</td></tr>
+<tr>
+<td title='Testing.TestAuto.ExecuteTestsfifth()'><b>ExecuteTestsfifth</b><br>Test class: Testing.TestAuto<br>Parameters: public void Testing.TestAuto.ExecuteTestsfifth(java.lang.reflect.Method)</td>
+<td><div><pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at DBConnection.DBConnection.DBQuery.GoogleTest(DBQuery.java:67)
+	at Testing.TestAuto.ExecuteTestsfifth(TestAuto.java:139)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace769132147", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace769132147'><pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at DBConnection.DBConnection.DBQuery.GoogleTest(DBQuery.java:67)
+	at Testing.TestAuto.ExecuteTestsfifth(TestAuto.java:139)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Testing.TestAuto@7c469c48</td></tr>
+<tr>
+<td title='Testing.TestAuto.ExecuteTestsfourth()'><b>ExecuteTestsfourth</b><br>Test class: Testing.TestAuto<br>Parameters: public void Testing.TestAuto.ExecuteTestsfourth(java.lang.reflect.Method)</td>
+<td><div><pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at DBConnection.DBConnection.DBQuery.GoogleTest(DBQuery.java:67)
+	at Testing.TestAuto.ExecuteTestsfourth(TestAuto.java:123)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1914108708", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1914108708'><pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at DBConnection.DBConnection.DBQuery.GoogleTest(DBQuery.java:67)
+	at Testing.TestAuto.ExecuteTestsfourth(TestAuto.java:123)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Testing.TestAuto@7c469c48</td></tr>
+<tr>
+<td title='Testing.TestAuto.ExecuteTestsnineth()'><b>ExecuteTestsnineth</b><br>Test class: Testing.TestAuto<br>Parameters: public void Testing.TestAuto.ExecuteTestsnineth(java.lang.reflect.Method)</td>
+<td><div><pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at DBConnection.DBConnection.DBQuery.GoogleTest(DBQuery.java:67)
+	at Testing.TestAuto.ExecuteTestsnineth(TestAuto.java:203)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1889757798", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1889757798'><pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at DBConnection.DBConnection.DBQuery.GoogleTest(DBQuery.java:67)
+	at Testing.TestAuto.ExecuteTestsnineth(TestAuto.java:203)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Testing.TestAuto@7c469c48</td></tr>
+<tr>
+<td title='Testing.TestAuto.ExecuteTestssecond()'><b>ExecuteTestssecond</b><br>Test class: Testing.TestAuto<br>Parameters: public void Testing.TestAuto.ExecuteTestssecond(java.lang.reflect.Method)</td>
+<td><div><pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at DBConnection.DBConnection.DBQuery.GoogleTest(DBQuery.java:67)
+	at Testing.TestAuto.ExecuteTestssecond(TestAuto.java:91)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace603658030", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace603658030'><pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at DBConnection.DBConnection.DBQuery.GoogleTest(DBQuery.java:67)
+	at Testing.TestAuto.ExecuteTestssecond(TestAuto.java:91)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Testing.TestAuto@7c469c48</td></tr>
+<tr>
+<td title='Testing.TestAuto.ExecuteTestsseventh()'><b>ExecuteTestsseventh</b><br>Test class: Testing.TestAuto<br>Parameters: public void Testing.TestAuto.ExecuteTestsseventh(java.lang.reflect.Method)</td>
+<td><div><pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at DBConnection.DBConnection.DBQuery.GoogleTest(DBQuery.java:67)
+	at Testing.TestAuto.ExecuteTestsseventh(TestAuto.java:171)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace790094605", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace790094605'><pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at DBConnection.DBConnection.DBQuery.GoogleTest(DBQuery.java:67)
+	at Testing.TestAuto.ExecuteTestsseventh(TestAuto.java:171)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Testing.TestAuto@7c469c48</td></tr>
+<tr>
+<td title='Testing.TestAuto.ExecuteTestssixth()'><b>ExecuteTestssixth</b><br>Test class: Testing.TestAuto<br>Parameters: public void Testing.TestAuto.ExecuteTestssixth(java.lang.reflect.Method)</td>
+<td><div><pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at DBConnection.DBConnection.DBQuery.GoogleTest(DBQuery.java:67)
+	at Testing.TestAuto.ExecuteTestssixth(TestAuto.java:155)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace314411620", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace314411620'><pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at DBConnection.DBConnection.DBQuery.GoogleTest(DBQuery.java:67)
+	at Testing.TestAuto.ExecuteTestssixth(TestAuto.java:155)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Testing.TestAuto@7c469c48</td></tr>
+<tr>
+<td title='Testing.TestAuto.ExecuteTeststenth()'><b>ExecuteTeststenth</b><br>Test class: Testing.TestAuto<br>Parameters: public void Testing.TestAuto.ExecuteTeststenth(java.lang.reflect.Method)</td>
+<td><div><pre>java.lang.NullPointerException
+	at DBConnection.DBConnection.DBQuery.GoogleTest(DBQuery.java:81)
+	at Testing.TestAuto.ExecuteTeststenth(TestAuto.java:219)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1890266440", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1890266440'><pre>java.lang.NullPointerException
+	at DBConnection.DBConnection.DBQuery.GoogleTest(DBQuery.java:81)
+	at Testing.TestAuto.ExecuteTeststenth(TestAuto.java:219)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Testing.TestAuto@7c469c48</td></tr>
+<tr>
+<td title='Testing.TestAuto.ExecuteTeststhird()'><b>ExecuteTeststhird</b><br>Test class: Testing.TestAuto<br>Parameters: public void Testing.TestAuto.ExecuteTeststhird(java.lang.reflect.Method)</td>
+<td><div><pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at DBConnection.DBConnection.DBQuery.GoogleTest(DBQuery.java:67)
+	at Testing.TestAuto.ExecuteTeststhird(TestAuto.java:107)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace324112183", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace324112183'><pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at DBConnection.DBConnection.DBQuery.GoogleTest(DBQuery.java:67)
+	at Testing.TestAuto.ExecuteTeststhird(TestAuto.java:107)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Testing.TestAuto@7c469c48</td></tr>
 </table><p>
 </body>
 </html>

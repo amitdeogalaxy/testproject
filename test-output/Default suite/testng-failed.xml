@@ -5,8 +5,8 @@
     <classes>
       <class name="Testing.TestAuto">
         <methods>
-          <include name="ExecuteTests"/>
-          <include name="beforetest"/>
+          <include name="ExecuteTest"/>
+          <include name="ExecuteTestssecond"/>
           <include name="setup"/>
           <include name="teardown"/>
         </methods>
