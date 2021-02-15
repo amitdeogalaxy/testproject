@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Testing.TestAuto" class="method navigator-link" hash-for-method="ExecuteTestseigth(Chrome)">ExecuteTestseigth(Chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Testing.TestAuto" class="method navigator-link" hash-for-method="ExecuteTestssecond(Chrome)">ExecuteTestssecond(Chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Testing.TestAuto" class="method navigator-link" hash-for-method="ExecuteTestsseventh(Chrome)">ExecuteTestsseventh(Chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Testing.TestAuto" class="method navigator-link" hash-for-method="ExecuteTestssixth(Chrome)">ExecuteTestssixth(Chrome)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -127,9 +142,33 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="ExecuteTestseigth(Chrome)">
+                  </a> <!-- ExecuteTestseigth(Chrome) -->
+                  <span class="method-name">ExecuteTestseigth</span>
+                  <span class="parameters">(Chrome)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="ExecuteTestssecond(Chrome)">
                   </a> <!-- ExecuteTestssecond(Chrome) -->
                   <span class="method-name">ExecuteTestssecond</span>
+                  <span class="parameters">(Chrome)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ExecuteTestsseventh(Chrome)">
+                  </a> <!-- ExecuteTestsseventh(Chrome) -->
+                  <span class="method-name">ExecuteTestsseventh</span>
+                  <span class="parameters">(Chrome)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ExecuteTestssixth(Chrome)">
+                  </a> <!-- ExecuteTestssixth(Chrome) -->
+                  <span class="method-name">ExecuteTestssixth</span>
                   <span class="parameters">(Chrome)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -187,7 +226,15 @@
               <span class="test-group-name">regression</span>
               <br/>
               <div class="method-in-group">
+                <span class="method-in-group-name">ExecuteTestseigth</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">ExecuteTestssecond</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">ExecuteTestssixth</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -195,7 +242,15 @@
               <span class="test-group-name">sanity</span>
               <br/>
               <div class="method-in-group">
+                <span class="method-in-group-name">ExecuteTestseigth</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">ExecuteTestssecond</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">ExecuteTestsseventh</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -215,16 +270,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'ExecuteTestssecond')
 data.setCell(0, 2, 'Testing.TestAuto')
-data.setCell(0, 3, 19274);
+data.setCell(0, 3, 20376);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'ExecuteTestsseventh')
+data.setCell(1, 2, 'Testing.TestAuto')
+data.setCell(1, 3, 18292);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'ExecuteTestssixth')
+data.setCell(2, 2, 'Testing.TestAuto')
+data.setCell(2, 3, 18048);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'ExecuteTestseigth')
+data.setCell(3, 2, 'Testing.TestAuto')
+data.setCell(3, 3, 17838);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -239,13 +306,23 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">6 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">Testing.TestAuto</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">ExecuteTest</span>
+                <br/>
+                <span class="ignored-method-name">ExecuteTestsfifth</span>
+                <br/>
+                <span class="ignored-method-name">ExecuteTestsnineth</span>
+                <br/>
+                <span class="ignored-method-name">ExecuteTestsfourth</span>
+                <br/>
+                <span class="ignored-method-name">ExecuteTeststhird</span>
+                <br/>
+                <span class="ignored-method-name">ExecuteTeststenth</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -261,6 +338,18 @@ return data;
               <div class="test-method">
                 <span class="method-name">ExecuteTestssecond(Chrome)</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ExecuteTestssixth(Chrome)</span>
+                <span class="method-start">20384 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ExecuteTestsseventh(Chrome)</span>
+                <span class="method-start">38434 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ExecuteTestseigth(Chrome)</span>
+                <span class="method-start">56728 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

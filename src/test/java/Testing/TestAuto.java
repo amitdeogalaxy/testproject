@@ -61,6 +61,12 @@ public class TestAuto {
 	ExtentTest log;
 	WebDriver driver;
 	String nameofCurrMethod;
+	
+	@BeforeClass
+	public String browservalue() {
+		String  browser_value=System.getProperty("browser");
+		return browser_value;
+	}
 
 	@BeforeSuite
 	public void setup() {
@@ -108,7 +114,7 @@ public class TestAuto {
 	@Parameters("browser")
 	public void ExecuteTest(String browser) {
 
-		driver = gettingbrowser(browser);
+		driver = gettingbrowser(browservalue());
 		nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
 		DBQuery query = new DBQuery();
 		try {
@@ -137,133 +143,79 @@ public class TestAuto {
 
 	}
 
-	@Test(priority = 3, groups = { "smoke", "regression" })
-
-	@Parameters("browser")
-	public void ExecuteTeststhird(String browser) {
-		driver = gettingbrowser(browser);
-		nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
-		DBQuery query = new DBQuery();
-		try {
-			query.callingDBTest();
-			query.GoogleTest(driver);
-			driver.close();
-		} catch (InterruptedException e) { // TODO Auto-generated
-			e.printStackTrace();
-		}
-	}
-
-	@Test(priority = 4, groups = { "smoke", "sanity" })
-
-	@Parameters("browser")
-	public void ExecuteTestsfourth(String browser) {
-		driver = gettingbrowser(browser);
-		nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
-		DBQuery query = new DBQuery();
-		try {
-			query.callingDBTest();
-			query.GoogleTest(driver);
-			driver.close();
-		} catch (InterruptedException e) { // TODO Auto-generated
-			e.printStackTrace();
-		}
-	}
-
-	@Test(priority = 5, groups = { "smoke" })
-
-	@Parameters("browser")
-	public void ExecuteTestsfifth(String browser) {
-		driver = gettingbrowser(browser);
-		nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
-		DBQuery query = new DBQuery();
-		try {
-			query.callingDBTest();
-			query.GoogleTest(driver);
-			driver.close();
-		} catch (InterruptedException e) { // TODO Auto-generated
-			e.printStackTrace();
-		}
-	}
-
-	@Test(priority = 6, groups = { "regression" })
-
-	@Parameters("browser")
-	public void ExecuteTestssixth(String browser) {
-		driver = gettingbrowser(browser);
-		nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
-		DBQuery query = new DBQuery();
-		try {
-			query.callingDBTest();
-			query.GoogleTest(driver);
-			driver.close();
-		} catch (InterruptedException e) { // TODO Auto-generated
-			e.printStackTrace();
-		}
-	}
-
-	@Test(priority = 7, groups = { "sanity" })
-
-	@Parameters("browser")
-	public void ExecuteTestsseventh(String browser) {
-		driver = gettingbrowser(browser);
-		nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
-		DBQuery query = new DBQuery();
-		try {
-			query.callingDBTest();
-			query.GoogleTest(driver);
-			driver.close();
-		} catch (InterruptedException e) { // TODO Auto-generated
-			e.printStackTrace();
-		}
-	}
-
-	@Test(priority = 8, groups = { "regression", "sanity" })
-
-	@Parameters("browser")
-	public void ExecuteTestseigth(String browser) {
-		driver = gettingbrowser(browser);
-		nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
-		DBQuery query = new DBQuery();
-		try {
-			query.callingDBTest();
-			query.GoogleTest(driver);
-			driver.close();
-		} catch (InterruptedException e) { // TODO Auto-generated
-			e.printStackTrace();
-		}
-	}
-
-	@Test(priority = 9, groups = { "smoke", "regression" })
-
-	@Parameters("browser")
-	public void ExecuteTestsnineth(String browser) {
-		driver = gettingbrowser(browser);
-		nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
-		DBQuery query = new DBQuery();
-		try {
-			query.callingDBTest();
-			query.GoogleTest(driver);
-			driver.close();
-		} catch (InterruptedException e) { // TODO Auto-generated
-			e.printStackTrace();
-		}
-	}
-
-	@Test(priority = 10)
-
-	@Parameters("browser")
-	public void ExecuteTeststenth(String browser) {
-		driver = gettingbrowser(browser);
-		nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
-		DBQuery query = new DBQuery();
-		try {
-			query.callingDBTest();
-			query.GoogleTest(driver);
-			driver.close();
-		} catch (InterruptedException e) { // TODO Auto-generated
-			e.printStackTrace();
-		}
-	}
+	/*
+	 * @Test(priority = 3, groups = { "smoke", "regression" })
+	 * 
+	 * @Parameters("browser") public void ExecuteTeststhird(String browser) { driver
+	 * = gettingbrowser(browser); nameofCurrMethod = new
+	 * Throwable().getStackTrace()[0].getMethodName(); DBQuery query = new
+	 * DBQuery(); try { query.callingDBTest(); query.GoogleTest(driver);
+	 * driver.close(); } catch (InterruptedException e) { // TODO Auto-generated
+	 * e.printStackTrace(); } }
+	 * 
+	 * @Test(priority = 4, groups = { "smoke", "sanity" })
+	 * 
+	 * @Parameters("browser") public void ExecuteTestsfourth(String browser) {
+	 * driver = gettingbrowser(browser); nameofCurrMethod = new
+	 * Throwable().getStackTrace()[0].getMethodName(); DBQuery query = new
+	 * DBQuery(); try { query.callingDBTest(); query.GoogleTest(driver);
+	 * driver.close(); } catch (InterruptedException e) { // TODO Auto-generated
+	 * e.printStackTrace(); } }
+	 * 
+	 * @Test(priority = 5, groups = { "smoke" })
+	 * 
+	 * @Parameters("browser") public void ExecuteTestsfifth(String browser) { driver
+	 * = gettingbrowser(browser); nameofCurrMethod = new
+	 * Throwable().getStackTrace()[0].getMethodName(); DBQuery query = new
+	 * DBQuery(); try { query.callingDBTest(); query.GoogleTest(driver);
+	 * driver.close(); } catch (InterruptedException e) { // TODO Auto-generated
+	 * e.printStackTrace(); } }
+	 * 
+	 * @Test(priority = 6, groups = { "regression" })
+	 * 
+	 * @Parameters("browser") public void ExecuteTestssixth(String browser) { driver
+	 * = gettingbrowser(browser); nameofCurrMethod = new
+	 * Throwable().getStackTrace()[0].getMethodName(); DBQuery query = new
+	 * DBQuery(); try { query.callingDBTest(); query.GoogleTest(driver);
+	 * driver.close(); } catch (InterruptedException e) { // TODO Auto-generated
+	 * e.printStackTrace(); } }
+	 * 
+	 * @Test(priority = 7, groups = { "sanity" })
+	 * 
+	 * @Parameters("browser") public void ExecuteTestsseventh(String browser) {
+	 * driver = gettingbrowser(browser); nameofCurrMethod = new
+	 * Throwable().getStackTrace()[0].getMethodName(); DBQuery query = new
+	 * DBQuery(); try { query.callingDBTest(); query.GoogleTest(driver);
+	 * driver.close(); } catch (InterruptedException e) { // TODO Auto-generated
+	 * e.printStackTrace(); } }
+	 * 
+	 * @Test(priority = 8, groups = { "regression", "sanity" })
+	 * 
+	 * @Parameters("browser") public void ExecuteTestseigth(String browser) { driver
+	 * = gettingbrowser(browser); nameofCurrMethod = new
+	 * Throwable().getStackTrace()[0].getMethodName(); DBQuery query = new
+	 * DBQuery(); try { query.callingDBTest(); query.GoogleTest(driver);
+	 * driver.close(); } catch (InterruptedException e) { // TODO Auto-generated
+	 * e.printStackTrace(); } }
+	 * 
+	 * @Test(priority = 9, groups = { "smoke", "regression" })
+	 * 
+	 * @Parameters("browser") public void ExecuteTestsnineth(String browser) {
+	 * driver = gettingbrowser(browser); nameofCurrMethod = new
+	 * Throwable().getStackTrace()[0].getMethodName(); DBQuery query = new
+	 * DBQuery(); try { query.callingDBTest(); query.GoogleTest(driver);
+	 * driver.close(); } catch (InterruptedException e) { // TODO Auto-generated
+	 * e.printStackTrace(); } }
+	 * 
+	 * @Test(priority = 10)
+	 * 
+	 * @Parameters("browser") public void ExecuteTeststenth(String browser) { driver
+	 * = gettingbrowser(browser); nameofCurrMethod = new
+	 * Throwable().getStackTrace()[0].getMethodName(); DBQuery query = new
+	 * DBQuery(); try { query.callingDBTest(); query.GoogleTest(driver);
+	 * driver.close(); } catch (InterruptedException e) { // TODO Auto-generated
+	 * e.printStackTrace(); } }
+	 */
 
 	@AfterSuite
 	public void teardown() {

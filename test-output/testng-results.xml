@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="6" total="10" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-15T00:56:50 IST" name="Suite" finished-at="2021-02-15T00:57:10 IST" duration-ms="19320">
+  <suite started-at="2021-02-15T11:48:11 IST" name="Suite" finished-at="2021-02-15T11:49:25 IST" duration-ms="74600">
     <groups>
       <group name="regression">
-        <method signature="TestAuto.ExecuteTestssecond(java.lang.String)[pri:2, instance:Testing.TestAuto@2b6faea6]" name="ExecuteTestssecond" class="Testing.TestAuto"/>
+        <method signature="TestAuto.ExecuteTestseigth(java.lang.String)[pri:8, instance:Testing.TestAuto@3cc2931c]" name="ExecuteTestseigth" class="Testing.TestAuto"/>
+        <method signature="TestAuto.ExecuteTestssecond(java.lang.String)[pri:2, instance:Testing.TestAuto@3cc2931c]" name="ExecuteTestssecond" class="Testing.TestAuto"/>
+        <method signature="TestAuto.ExecuteTestssixth(java.lang.String)[pri:6, instance:Testing.TestAuto@3cc2931c]" name="ExecuteTestssixth" class="Testing.TestAuto"/>
       </group> <!-- regression -->
       <group name="sanity">
-        <method signature="TestAuto.ExecuteTestssecond(java.lang.String)[pri:2, instance:Testing.TestAuto@2b6faea6]" name="ExecuteTestssecond" class="Testing.TestAuto"/>
+        <method signature="TestAuto.ExecuteTestseigth(java.lang.String)[pri:8, instance:Testing.TestAuto@3cc2931c]" name="ExecuteTestseigth" class="Testing.TestAuto"/>
+        <method signature="TestAuto.ExecuteTestssecond(java.lang.String)[pri:2, instance:Testing.TestAuto@3cc2931c]" name="ExecuteTestssecond" class="Testing.TestAuto"/>
+        <method signature="TestAuto.ExecuteTestsseventh(java.lang.String)[pri:7, instance:Testing.TestAuto@3cc2931c]" name="ExecuteTestsseventh" class="Testing.TestAuto"/>
       </group> <!-- sanity -->
     </groups>
-    <test started-at="2021-02-15T00:56:50 IST" name="AutomationExecution_Chrome" finished-at="2021-02-15T00:57:10 IST" duration-ms="19320">
+    <test started-at="2021-02-15T11:48:11 IST" name="AutomationExecution_Chrome" finished-at="2021-02-15T11:49:25 IST" duration-ms="74600">
       <class name="Testing.TestAuto">
-        <test-method signature="ExecuteTestssecond(java.lang.String)[pri:2, instance:Testing.TestAuto@2b6faea6]" started-at="2021-02-15T00:56:50 IST" name="ExecuteTestssecond" finished-at="2021-02-15T00:57:10 IST" duration-ms="19274" status="PASS">
+        <test-method signature="ExecuteTestssecond(java.lang.String)[pri:2, instance:Testing.TestAuto@3cc2931c]" started-at="2021-02-15T11:48:11 IST" name="ExecuteTestssecond" finished-at="2021-02-15T11:48:31 IST" duration-ms="20376" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -24,6 +28,39 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExecuteTestssecond -->
+        <test-method signature="ExecuteTestssixth(java.lang.String)[pri:6, instance:Testing.TestAuto@3cc2931c]" started-at="2021-02-15T11:48:31 IST" name="ExecuteTestssixth" finished-at="2021-02-15T11:48:49 IST" duration-ms="18048" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExecuteTestssixth -->
+        <test-method signature="ExecuteTestsseventh(java.lang.String)[pri:7, instance:Testing.TestAuto@3cc2931c]" started-at="2021-02-15T11:48:49 IST" name="ExecuteTestsseventh" finished-at="2021-02-15T11:49:08 IST" duration-ms="18292" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExecuteTestsseventh -->
+        <test-method signature="ExecuteTestseigth(java.lang.String)[pri:8, instance:Testing.TestAuto@3cc2931c]" started-at="2021-02-15T11:49:08 IST" name="ExecuteTestseigth" finished-at="2021-02-15T11:49:25 IST" duration-ms="17838" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExecuteTestseigth -->
       </class> <!-- Testing.TestAuto -->
     </test> <!-- AutomationExecution_Chrome -->
   </suite> <!-- Suite -->

@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="tests" thread-count="5">
 	<test name="AutomationExecution_Chrome">
-		<parameter name="browser" value="Chrome" />
+		<parameter name="browser" value="${browser}" />
 		<groups>
 			<define name="all">
 				<include name="sanity" />
@@ -18,7 +18,7 @@
 			<class name="Testing.TestAuto" />
 		</classes>
 	</test>
-	<test name="AutomationExecution_Firefox">
+	 <!-- <test name="AutomationExecution_Firefox">
 		<parameter name="browser" value="Firefox" />
 		<groups>
 			<define name="all">
@@ -69,5 +69,5 @@
 		<classes>
 			<class name="Testing.TestAuto" />
 		</classes>
-	</test> 
+	</test>   -->
 </suite> 

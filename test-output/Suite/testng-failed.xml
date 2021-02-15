@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" parallel="tests" name="AutomationExecution_Chrome(failed)">
-    <parameter name="browser" value="Chrome"/>
+    <parameter name="browser" value="Chrome,firefox"/>
     <groups>
       <run>
         <include name="all"/>
@@ -12,7 +12,10 @@
     <classes>
       <class name="Testing.TestAuto">
         <methods>
+          <include name="ExecuteTestseigth" invocation-numbers="0"/>
+          <include name="ExecuteTestsseventh" invocation-numbers="0"/>
           <include name="ExecuteTestssecond" invocation-numbers="0"/>
+          <include name="ExecuteTestssixth" invocation-numbers="0"/>
         </methods>
       </class> <!-- Testing.TestAuto -->
     </classes>
