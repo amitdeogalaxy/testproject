@@ -20,8 +20,8 @@ import org.openqa.selenium.edge.EdgeDriver;
 public class DBQuery {
 
 	static File file_query = new File(
-			"C:\\Users\\adeo\\Desktop\\Project\\DBConnection\\src\\main\\resources\\dbQueries\\maintainWireNotification.properties");
-	static File file_db = new File("C:\\Users\\adeo\\Desktop\\Project\\DBConnection\\DB.properties");
+			System.getProperty("user.dir")+"\\src\\main\\resources\\dbQueries\\maintainWireNotification.properties");
+	static File file_db = new File(System.getProperty("user.dir")+"\\DB.properties");
 
 	static FileInputStream fs_query;
 	static FileInputStream fs_dbprop;
