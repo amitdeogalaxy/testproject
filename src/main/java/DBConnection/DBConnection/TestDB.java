@@ -19,7 +19,7 @@ import java.util.Properties;
 
 public class TestDB {
 
-	File file = new File("C:\\Users\\adeo\\Desktop\\Project\\DBConnection\\DB.properties");
+	File file = new File(System.getProperty("user.dir")+"\\DB.properties");
 	FileInputStream fs;
 	int type = 0;
 	int count = 0;
