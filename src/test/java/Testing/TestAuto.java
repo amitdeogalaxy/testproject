@@ -93,15 +93,15 @@ public class TestAuto {
 
 		else if (browser_value.equalsIgnoreCase("Firefox")) {
 			System.setProperty("webdriver.gecko.driver",
-					"C:\\Users\\adeo\\Desktop\\Project\\DBConnection\\src\\main\\resources\\geckodriver.exe");
+					System.getProperty("user.dir")+"\\src\\main\\resources\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		} else if (browser_value.equalsIgnoreCase("IE")) {
 			System.setProperty("webdriver.ie.driver",
-					"C:\\Users\\adeo\\Desktop\\Project\\DBConnection\\src\\main\\resources\\IEDriverServer.exe");
+					System.getProperty("user.dir")+"\\src\\main\\resources\\IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
 		} else if (browser_value.equalsIgnoreCase("Edge")) {
 			System.setProperty("webdriver.edge.driver",
-					"C:\\Users\\adeo\\Desktop\\Project\\DBConnection\\src\\main\\resources\\msedgedriver.exe");
+					System.getProperty("user.dir")+"\\src\\main\\resources\\msedgedriver.exe");
 			driver = new EdgeDriver();
 		} else {
 			System.out.println("No browser value provided");
