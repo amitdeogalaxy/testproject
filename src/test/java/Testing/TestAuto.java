@@ -61,6 +61,7 @@ public class TestAuto {
 	ExtentTest log;
 	WebDriver driver;
 	String nameofCurrMethod;
+	String abc;
 	
 	@BeforeClass
 	public String browservalue() {
