@@ -87,7 +87,7 @@ public class TestAuto {
 
 		if (browser_value.equalsIgnoreCase("Chrome")) {
 			System.setProperty("webdriver.chrome.driver",
-					"C:\\Users\\adeo\\Desktop\\Project\\DBConnection\\src\\main\\resources\\chromedriver.exe");
+					System.getProperty("user.dir")+"\\src\\main\\resources\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 
