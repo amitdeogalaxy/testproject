@@ -111,7 +111,7 @@ public class TestAuto {
 
 	}
 
-	@Test(priority = 1, groups = { "smoke", "sanity", "regression" })
+	@Test(priority = 1, groups = { "smoke", "regression" })
 	@Parameters("browser")
 	public void ExecuteTest(String browser) {
 
