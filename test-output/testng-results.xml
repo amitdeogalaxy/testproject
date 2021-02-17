@@ -1,23 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="10" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-15T11:48:11 IST" name="Suite" finished-at="2021-02-15T11:49:25 IST" duration-ms="74600">
+  <suite started-at="2021-02-17T14:32:02 IST" name="Suite" finished-at="2021-02-17T14:32:25 IST" duration-ms="23286">
     <groups>
       <group name="regression">
-        <method signature="TestAuto.ExecuteTestseigth(java.lang.String)[pri:8, instance:Testing.TestAuto@3cc2931c]" name="ExecuteTestseigth" class="Testing.TestAuto"/>
-        <method signature="TestAuto.ExecuteTestssecond(java.lang.String)[pri:2, instance:Testing.TestAuto@3cc2931c]" name="ExecuteTestssecond" class="Testing.TestAuto"/>
-        <method signature="TestAuto.ExecuteTestssixth(java.lang.String)[pri:6, instance:Testing.TestAuto@3cc2931c]" name="ExecuteTestssixth" class="Testing.TestAuto"/>
+        <method signature="TestAuto.ExecuteTest(java.lang.String)[pri:1, instance:Testing.TestAuto@7880cdf3]" name="ExecuteTest" class="Testing.TestAuto"/>
+        <method signature="TestAuto.ExecuteTestssecond(java.lang.String)[pri:2, instance:Testing.TestAuto@7880cdf3]" name="ExecuteTestssecond" class="Testing.TestAuto"/>
       </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="TestAuto.ExecuteTest(java.lang.String)[pri:1, instance:Testing.TestAuto@7880cdf3]" name="ExecuteTest" class="Testing.TestAuto"/>
+      </group> <!-- smoke -->
       <group name="sanity">
-        <method signature="TestAuto.ExecuteTestseigth(java.lang.String)[pri:8, instance:Testing.TestAuto@3cc2931c]" name="ExecuteTestseigth" class="Testing.TestAuto"/>
-        <method signature="TestAuto.ExecuteTestssecond(java.lang.String)[pri:2, instance:Testing.TestAuto@3cc2931c]" name="ExecuteTestssecond" class="Testing.TestAuto"/>
-        <method signature="TestAuto.ExecuteTestsseventh(java.lang.String)[pri:7, instance:Testing.TestAuto@3cc2931c]" name="ExecuteTestsseventh" class="Testing.TestAuto"/>
+        <method signature="TestAuto.ExecuteTest(java.lang.String)[pri:1, instance:Testing.TestAuto@7880cdf3]" name="ExecuteTest" class="Testing.TestAuto"/>
+        <method signature="TestAuto.ExecuteTestssecond(java.lang.String)[pri:2, instance:Testing.TestAuto@7880cdf3]" name="ExecuteTestssecond" class="Testing.TestAuto"/>
       </group> <!-- sanity -->
     </groups>
-    <test started-at="2021-02-15T11:48:11 IST" name="AutomationExecution_Chrome" finished-at="2021-02-15T11:49:25 IST" duration-ms="74600">
+    <test started-at="2021-02-17T14:32:02 IST" name="DBMethodsExecution" finished-at="2021-02-17T14:32:03 IST" duration-ms="807">
+      <class name="Testing.TestingDatabaseMethods">
+        <test-method signature="TestSQLQueries()[pri:0, instance:Testing.TestingDatabaseMethods@25d250c6]" started-at="2021-02-17T14:32:02 IST" name="TestSQLQueries" finished-at="2021-02-17T14:32:03 IST" duration-ms="773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestSQLQueries -->
+      </class> <!-- Testing.TestingDatabaseMethods -->
+    </test> <!-- DBMethodsExecution -->
+    <test started-at="2021-02-17T14:32:02 IST" name="AutomationExecution_Chrome" finished-at="2021-02-17T14:32:25 IST" duration-ms="23286">
       <class name="Testing.TestAuto">
-        <test-method signature="ExecuteTestssecond(java.lang.String)[pri:2, instance:Testing.TestAuto@3cc2931c]" started-at="2021-02-15T11:48:11 IST" name="ExecuteTestssecond" finished-at="2021-02-15T11:48:31 IST" duration-ms="20376" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testing.TestAuto@7880cdf3]" started-at="2021-02-17T14:32:02 IST" name="setup" finished-at="2021-02-17T14:32:02 IST" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="browservalue()[pri:0, instance:Testing.TestAuto@7880cdf3]" started-at="2021-02-17T14:32:02 IST" name="browservalue" finished-at="2021-02-17T14:32:02 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browservalue -->
+        <test-method signature="ExecuteTest(java.lang.String)[pri:1, instance:Testing.TestAuto@7880cdf3]" started-at="2021-02-17T14:32:02 IST" name="ExecuteTest" finished-at="2021-02-17T14:32:02 IST" duration-ms="5" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at Testing.TestAuto.gettingbrowser(TestAuto.java:88)
+at Testing.TestAuto.ExecuteTest(TestAuto.java:117)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:830)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExecuteTest -->
+        <test-method signature="ExecuteTestssecond(java.lang.String)[pri:2, instance:Testing.TestAuto@7880cdf3]" started-at="2021-02-17T14:32:02 IST" name="ExecuteTestssecond" finished-at="2021-02-17T14:32:25 IST" duration-ms="23238" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -28,39 +87,10 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExecuteTestssecond -->
-        <test-method signature="ExecuteTestssixth(java.lang.String)[pri:6, instance:Testing.TestAuto@3cc2931c]" started-at="2021-02-15T11:48:31 IST" name="ExecuteTestssixth" finished-at="2021-02-15T11:48:49 IST" duration-ms="18048" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Testing.TestAuto@7880cdf3]" started-at="2021-02-17T14:32:26 IST" name="teardown" finished-at="2021-02-17T14:32:26 IST" duration-ms="636" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ExecuteTestssixth -->
-        <test-method signature="ExecuteTestsseventh(java.lang.String)[pri:7, instance:Testing.TestAuto@3cc2931c]" started-at="2021-02-15T11:48:49 IST" name="ExecuteTestsseventh" finished-at="2021-02-15T11:49:08 IST" duration-ms="18292" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ExecuteTestsseventh -->
-        <test-method signature="ExecuteTestseigth(java.lang.String)[pri:8, instance:Testing.TestAuto@3cc2931c]" started-at="2021-02-15T11:49:08 IST" name="ExecuteTestseigth" finished-at="2021-02-15T11:49:25 IST" duration-ms="17838" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ExecuteTestseigth -->
+        </test-method> <!-- teardown -->
       </class> <!-- Testing.TestAuto -->
     </test> <!-- AutomationExecution_Chrome -->
   </suite> <!-- Suite -->

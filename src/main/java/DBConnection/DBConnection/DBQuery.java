@@ -20,14 +20,14 @@ import org.openqa.selenium.edge.EdgeDriver;
 public class DBQuery {
 
 	static File file_query = new File(
-			"C:\\Users\\adeo\\Desktop\\Project\\DBConnection\\src\\main\\resources\\dbQueries\\maintainWireNotification.properties");
-	static File file_db = new File("C:\\Users\\adeo\\Desktop\\Project\\DBConnection\\DB.properties");
+			System.getProperty("user.dir") + "\\src\\main\\resources\\dbQueries\\maintainWireNotification.properties");
+	static File file_db = new File(System.getProperty("user.dir") + "\\DB.properties");
 
 	static FileInputStream fs_query;
 	static FileInputStream fs_dbprop;
 	static Properties prop;
 	static Properties prop_dbproperties;
-	 public static WebDriver Driver;
+	public static WebDriver Driver;
 
 	public void callingDBTest() throws InterruptedException {
 		try {
@@ -59,26 +59,37 @@ public class DBQuery {
 	}
 
 	public void GoogleTest(WebDriver Driver) throws InterruptedException {
-		
-		
 
-		
-		  Driver.manage().window().maximize(); Driver.manage().deleteAllCookies();
-		  Driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
-		  Driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		  Driver.get("https://www.google.com/");
-		 
+		Driver.manage().window().maximize();
+		Driver.manage().deleteAllCookies();
+		Driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+		Driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		Driver.get("https://www.google.com/");
+
 		Thread.sleep(5000);
 		Driver.findElement(By.xpath("//a[text()='Sign in']")).click();
 		Thread.sleep(5000);
 		WebElement sign_in = Driver.findElement(By.xpath("//input[@type='email']"));
 		if (sign_in.isDisplayed()) {
-			System.out.println("Sign In page is displayed for Google");			
+			System.out.println("Sign In page is displayed for Google");
 		} else {
 			System.out.println("Sign In page is not displayed for google");
 
 		}
 
 	}
+	/*
+	 * public static void main(String[] args) {
+	 * System.out.println(System.getProperty("user.dir"));
+	 * 
+	 * System.setProperty("webdriver.chrome.driver",
+	 * System.getProperty("user.dir")+"\\src\\main\\resources\\chromedriver.exe");
+	 * WebDriver driver = new ChromeDriver(); driver.get("https://www.google.com");
+	 * driver.quit();
+	 * 
+	 * System.out.println(System.getProperty("user.dir")+
+	 * "\\src\\main\\resources\\dbQueries\\maintainWireNotification.properties");
+	 * System.out.println(System.getProperty("user.dir")+"\\DB.properties"); }
+	 */
 
 }

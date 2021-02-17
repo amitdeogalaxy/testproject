@@ -53,6 +53,11 @@
 			<artifactId>jackson-databind</artifactId>
 			<version>2.12.0</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache-extras.beanshell</groupId>
+			<artifactId>bsh</artifactId>
+			<version>2.0b6</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<pluginManagement><!-- lock down plugins versions to avoid using Maven 
@@ -77,13 +82,12 @@
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>3.0.0-M4</version>
 					<configuration>
-					<systemProperties>
-                    <property>
-                        <name>browser</name>
-                        <value>${browser}</value>
-                    </property>
-                   
-                </systemProperties>						
+						<systemProperties>
+							<property>
+								<name>browser</name>
+								<value>${browser}</value>
+							</property>
+						</systemProperties>
 						<suiteXmlFiles>
 							<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
 						</suiteXmlFiles>
