@@ -45,7 +45,6 @@
 			</method-selector>
 		</method-selectors>
 		<parameter name="browser" value="${browser}" />
-
 		<classes>
 			<class name="Testing.TestAuto" />
 		</classes>
