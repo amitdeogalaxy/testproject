@@ -21,9 +21,8 @@ public class DBQuery {
 
 	static File file_query = new File(
 
-			System.getProperty("user.dir")+"\\src\\main\\resources\\dbQueries\\maintainWireNotification.properties");
-	static File file_db = new File(System.getProperty("user.dir")+"\\DB.properties");
-
+			System.getProperty("user.dir") + "\\src\\main\\resources\\dbQueries\\maintainWireNotification.properties");
+	static File file_db = new File(System.getProperty("user.dir") + "\\DB.properties");
 
 	static FileInputStream fs_query;
 	static FileInputStream fs_dbprop;

@@ -86,7 +86,7 @@ public class TestAuto {
 
 		if (browser_value.equalsIgnoreCase("Chrome")) {
 			System.setProperty("webdriver.chrome.driver",
-					System.getProperty("user.dir")+"\\src\\main\\resources\\chromedriver.exe");
+					System.getProperty("user.dir") + "\\src\\main\\resources\\chromedriver.exe");
 
 			driver = new ChromeDriver();
 		}
@@ -103,15 +103,15 @@ public class TestAuto {
 		} else if (browser_value.equalsIgnoreCase("Edge")) {
 			System.setProperty("webdriver.edge.driver",
 
-					System.getProperty("user.dir")+"\\src\\main\\resources\\geckodriver.exe");
+					System.getProperty("user.dir") + "\\src\\main\\resources\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		} else if (browser_value.equalsIgnoreCase("IE")) {
 			System.setProperty("webdriver.ie.driver",
-					System.getProperty("user.dir")+"\\src\\main\\resources\\IEDriverServer.exe");
+					System.getProperty("user.dir") + "\\src\\main\\resources\\IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
 		} else if (browser_value.equalsIgnoreCase("Edge")) {
 			System.setProperty("webdriver.edge.driver",
-					System.getProperty("user.dir")+"\\src\\main\\resources\\msedgedriver.exe");
+					System.getProperty("user.dir") + "\\src\\main\\resources\\msedgedriver.exe");
 
 			driver = new EdgeDriver();
 		} else {
@@ -132,7 +132,7 @@ public class TestAuto {
 			query.callingDBTest();
 			query.GoogleTest(driver);
 			driver.close();
-		} catch (InterruptedException e) { 
+		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 	}
@@ -141,14 +141,14 @@ public class TestAuto {
 	@Parameters("browser")
 	public void ExecuteTestssecond(String browser) {
 
-		driver = gettingbrowser(browser);
+		driver = gettingbrowser(browservalue());
 		nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
 		DBQuery query = new DBQuery();
 		try {
 			query.callingDBTest();
 			query.GoogleTest(driver);
 			driver.close();
-		} catch (InterruptedException e) { 
+		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 
@@ -158,14 +158,14 @@ public class TestAuto {
 
 	@Parameters("browser")
 	public void ExecuteTeststhird(String browser) {
-		driver = gettingbrowser(browser);
+		driver = gettingbrowser(browservalue());
 		nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
 		DBQuery query = new DBQuery();
 		try {
 			query.callingDBTest();
 			query.GoogleTest(driver);
 			driver.close();
-		} catch (InterruptedException e) { 
+		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 	}
@@ -174,14 +174,14 @@ public class TestAuto {
 
 	@Parameters("browser")
 	public void ExecuteTestsfourth(String browser) {
-		driver = gettingbrowser(browser);
+		driver = gettingbrowser(browservalue());
 		nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
 		DBQuery query = new DBQuery();
 		try {
 			query.callingDBTest();
 			query.GoogleTest(driver);
 			driver.close();
-		} catch (InterruptedException e) { 
+		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 	}
@@ -190,14 +190,14 @@ public class TestAuto {
 
 	@Parameters("browser")
 	public void ExecuteTestsfifth(String browser) {
-		driver = gettingbrowser(browser);
+		driver = gettingbrowser(browservalue());
 		nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
 		DBQuery query = new DBQuery();
 		try {
 			query.callingDBTest();
 			query.GoogleTest(driver);
 			driver.close();
-		} catch (InterruptedException e) { 
+		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 	}
@@ -206,14 +206,14 @@ public class TestAuto {
 
 	@Parameters("browser")
 	public void ExecuteTestssixth(String browser) {
-		driver = gettingbrowser(browser);
+		driver = gettingbrowser(browservalue());
 		nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
 		DBQuery query = new DBQuery();
 		try {
 			query.callingDBTest();
 			query.GoogleTest(driver);
 			driver.close();
-		} catch (InterruptedException e) { 
+		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 	}
@@ -222,14 +222,14 @@ public class TestAuto {
 
 	@Parameters("browser")
 	public void ExecuteTestsseventh(String browser) {
-		driver = gettingbrowser(browser);
+		driver = gettingbrowser(browservalue());
 		nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
 		DBQuery query = new DBQuery();
 		try {
 			query.callingDBTest();
 			query.GoogleTest(driver);
 			driver.close();
-		} catch (InterruptedException e) { 
+		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 	}
@@ -238,14 +238,14 @@ public class TestAuto {
 
 	@Parameters("browser")
 	public void ExecuteTestseigth(String browser) {
-		driver = gettingbrowser(browser);
+		driver = gettingbrowser(browservalue());
 		nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
 		DBQuery query = new DBQuery();
 		try {
 			query.callingDBTest();
 			query.GoogleTest(driver);
 			driver.close();
-		} catch (InterruptedException e) { 
+		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 	}
@@ -254,14 +254,14 @@ public class TestAuto {
 
 	@Parameters("browser")
 	public void ExecuteTestsnineth(String browser) {
-		driver = gettingbrowser(browser);
+		driver = gettingbrowser(browservalue());
 		nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
 		DBQuery query = new DBQuery();
 		try {
 			query.callingDBTest();
 			query.GoogleTest(driver);
 			driver.close();
-		} catch (InterruptedException e) { 
+		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 	}
@@ -270,14 +270,14 @@ public class TestAuto {
 
 	@Parameters("browser")
 	public void ExecuteTeststenth(String browser) {
-		driver = gettingbrowser(browser);
+		driver = gettingbrowser(browservalue());
 		nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
 		DBQuery query = new DBQuery();
 		try {
 			query.callingDBTest();
 			query.GoogleTest(driver);
 			driver.close();
-		} catch (InterruptedException e) { 
+		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 	}
