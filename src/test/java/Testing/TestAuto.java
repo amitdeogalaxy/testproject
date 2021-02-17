@@ -63,8 +63,8 @@ public class TestAuto {
 
 	@BeforeClass
 	public String browservalue() {
-		String browser_value = System.getProperty("browser");
-		return browser_value;
+		String browse_value = System.getProperty("browser");
+		return browse_value;
 	}
 
 	@BeforeSuite
@@ -125,7 +125,7 @@ public class TestAuto {
 	@Parameters("browser")
 	public void ExecuteTest(String browser) {
 
-		driver = gettingbrowser(browser);
+		driver = gettingbrowser(browservalue());
 		nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
 		DBQuery query = new DBQuery();
 		try {
@@ -141,7 +141,7 @@ public class TestAuto {
 	@Parameters("browser")
 	public void ExecuteTestssecond(String browser) {
 
-		driver = gettingbrowser(browser);
+		driver = gettingbrowser(browservalue());
 		nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
 		DBQuery query = new DBQuery();
 		try {
@@ -158,7 +158,7 @@ public class TestAuto {
 
 	@Parameters("browser")
 	public void ExecuteTeststhird(String browser) {
-		driver = gettingbrowser(browser);
+		driver = gettingbrowser(browservalue());
 		nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
 		DBQuery query = new DBQuery();
 		try {
@@ -174,7 +174,7 @@ public class TestAuto {
 
 	@Parameters("browser")
 	public void ExecuteTestsfourth(String browser) {
-		driver = gettingbrowser(browser);
+		driver = gettingbrowser(browservalue());
 		nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
 		DBQuery query = new DBQuery();
 		try {
@@ -190,7 +190,7 @@ public class TestAuto {
 
 	@Parameters("browser")
 	public void ExecuteTestsfifth(String browser) {
-		driver = gettingbrowser(browser);
+		driver = gettingbrowser(browservalue());
 		nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
 		DBQuery query = new DBQuery();
 		try {
@@ -206,7 +206,7 @@ public class TestAuto {
 
 	@Parameters("browser")
 	public void ExecuteTestssixth(String browser) {
-		driver = gettingbrowser(browser);
+		driver = gettingbrowser(browservalue());
 		nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
 		DBQuery query = new DBQuery();
 		try {
@@ -222,7 +222,7 @@ public class TestAuto {
 
 	@Parameters("browser")
 	public void ExecuteTestsseventh(String browser) {
-		driver = gettingbrowser(browser);
+		driver = gettingbrowser(browservalue());
 		nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
 		DBQuery query = new DBQuery();
 		try {
@@ -237,7 +237,7 @@ public class TestAuto {
 	@Test(priority = 8, groups = { "regression", "sanity" })
 	@Parameters("browser")
 	public void ExecuteTestseigth(String browser) {
-		driver = gettingbrowser(browser);
+		driver = gettingbrowser(browservalue());
 		nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
 		DBQuery query = new DBQuery();
 		try {
@@ -252,7 +252,7 @@ public class TestAuto {
 	@Test(priority = 9, groups = { "smoke", "regression" })
 	@Parameters("browser")
 	public void ExecuteTestsnineth(String browser) {
-		driver = gettingbrowser(browser);
+		driver = gettingbrowser(browservalue());
 		nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
 		DBQuery query = new DBQuery();
 		try {
@@ -268,7 +268,7 @@ public class TestAuto {
 
 	@Parameters("browser")
 	public void ExecuteTeststenth(String browser) {
-		driver = gettingbrowser(browser);
+		driver = gettingbrowser(browservalue());
 		nameofCurrMethod = new Throwable().getStackTrace()[0].getMethodName();
 		DBQuery query = new DBQuery();
 		try {
