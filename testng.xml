@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="tests" thread-count="5">
+<suite name="Suite" parallel="methods" thread-count="5">
 	<test name="AutomationExecution_Chrome">
 		<method-selectors>
 			<method-selector>
@@ -16,53 +16,5 @@
 		<classes>
 			<class name="Testing.TestAuto" />
 		</classes>
-	</test>
-	<test name="AutomationExecution_Firefox">
-		<method-selectors>
-			<method-selector>
-				<script language="beanshell">
-                <![CDATA[
-                    whatGroup = System.getProperty("groupToRun");
-                    groups.containsKey(whatGroup);
-                ]]>
-				</script>
-			</method-selector>
-		</method-selectors>
-		<parameter name="browser" value="${browser}" />
-		<classes>
-			<class name="Testing.TestAuto" />
-		</classes>
-	</test>
-	<test name="AutomationExecution_IE">
-		<method-selectors>
-			<method-selector>
-				<script language="beanshell">
-                <![CDATA[
-                    whatGroup = System.getProperty("groupToRun");
-                    groups.containsKey(whatGroup);
-                ]]>
-				</script>
-			</method-selector>
-		</method-selectors>
-		<parameter name="browser" value="${browser}" />
-		<classes>
-			<class name="Testing.TestAuto" />
-		</classes>
-	</test>
-	<test name="AutomationExecution_Edge">
-		<method-selectors>
-			<method-selector>
-				<script language="beanshell">
-                <![CDATA[
-                    whatGroup = System.getProperty("groupToRun");
-                    groups.containsKey(whatGroup);
-                ]]>
-				</script>
-			</method-selector>
-		</method-selectors>
-		<parameter name="browser" value="${browser}" />
-		<classes>
-			<class name="Testing.TestAuto" />
-		</classes>
-	</test>
+	</test>	
 </suite> 
